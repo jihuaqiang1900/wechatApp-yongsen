@@ -1,0 +1,14 @@
+<!--pages/user/user.wxml-->
+<view>
+    <view class="header">
+        <image src="{{userInfo.avatarUrl}}" class="userImage"></image>
+        <text class="userName">欢迎您，{{userInfo.nickName}}</text>
+    </view>
+    <view class="block"></view>
+    <view class="items">
+        <view wx:for="{{menus}}" class="item" wx:key="" data-to="{{item.to}}" bindtap="jumpTo">
+            <image src="{{item.src}}" class="item_image"></image>
+            <text class="item_name">{{item.name}}</text>
+        </view>
+    </view>
+</view>

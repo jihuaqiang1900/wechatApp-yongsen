@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="">
+  <view wx:for="{{menus}}" wx:key="" class="ava">
+    <image src="{{item.src}}" class="avaImage"></image>
+    <view class="title">{{item.name}}</view>
+    <view class="subTitle">{{item.subTitle}}</view>
+  </view>
+</view>

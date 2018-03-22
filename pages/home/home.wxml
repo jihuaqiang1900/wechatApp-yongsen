@@ -1,0 +1,45 @@
+<!--pages/home/home.wxml-->
+<view>
+    <view class="headerLocation" bindtap="openMap">
+            <navigator url="../map/map">
+                <view wx:if="{{!locationDetail}}">
+                            <image src="./../../static/images/location.png" class="locationImage"></image>
+                            <text>定位中。。。</text>
+                        </view>
+                        <view wx:if="{{locationDetail}}">
+                            <image src="./../../static/images/location_fill.png" class="locationImage"></image>
+                            <text>当前位置：{{locationDetail}}</text>
+                        </view>
+            </navigator>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="title">
+        公司简介
+    </view>
+    <view class="content">
+        唐山市永森机电设备有限公司，主营电梯销售、安装、维修、保养，并同时经销电梯配件、电气设备等。具有电梯安装维修双B级资质。
+    </view>
+    <view class="title">
+        企业文化
+    </view>
+    <view class="content">
+        我们秉承务实、高效、诚信、负责的态度服务于所有客户，遵循"为客户提供更安心的承载，为员工、为企业实现梦想"的"三为"使命，实行"时刻准备着，先解决问题后再分责任"的五星级服务理念，为客户提供全程安心服务。
+    </view>
+    <view class="title">
+        企业荣誉
+    </view>
+    <view class="prize_contain">
+        <image src="../../static/images/0.jpeg" class="prize_photo"></image>
+        <image src="../../static/images/1.jpeg" class="prize_photo"></image>
+        <image src="../../static/images/2.jpeg" class="prize_photo"></image>
+        <image src="../../static/images/3.jpeg" class="prize_photo"></image>
+    </view>
+</view>
+

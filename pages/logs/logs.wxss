@@ -1,0 +1,17 @@
+
+.ava{
+    width:calc(100%-170px);
+    height: 80px;
+    padding: 10px 20px 0 150px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    margin: 10px 0;
+}
+.avaImage{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 30px;
+ }
